@@ -15,11 +15,22 @@ echo Hello World
 
 
 
-## Declaring Variable
-*Note:* To access the value a declared variable, just add a ```$``` in front of the variable name.
+## Basics
+
 ```Bash
+
+# Note: To access the value a declared variable, just add a $ in front of the variable name.
 var1 = "Hello World"
 echo $var
+
+# String concatenation
+mystring="${arg1}12${arg2}endoffile"
+
+otherString="$arg1"
+otherString+="12"
+otherString+="$arg2
+
+
 ```
 ## Arrays
 
@@ -39,4 +50,4 @@ do
     printf "%4d: %s %s\n" $index ${arr[$index]}
 
 done
-```
+``
