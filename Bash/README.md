@@ -23,12 +23,30 @@ echo Hello World
 var1 = "Hello World"
 echo $var
 
+#Boolean values
+
+yes = true
+no = false
+
 # String concatenation
+arg1 = "Hello"
+arg2 = "World"
+
 mystring="${arg1}12${arg2}endoffile"
 
+#Alternative String concatenation
 otherString="$arg1"
 otherString+="12"
 otherString+="$arg2"
+
+# Basic conditions
+# Note: Compare to other languages, if statements differ in bash scripting.
+# Check the compare operators
+#
+  if [ arg2 = "Hello"]; then
+    echo true
+  fi
+
 
 ```
 ## Arrays
@@ -40,6 +58,10 @@ arr[2]="item 3"
 arr[3]="item 4"
 arr[4]="item 5"
 arr[5]="item 6"
+
+#Push a value to array
+arr+=('item 7')
+
 ```
 
 ## For loop
