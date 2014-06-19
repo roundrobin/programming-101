@@ -30,9 +30,9 @@ arr[2]="item 3"
 arr[3]="item 4"
 arr[4]="item 5"
 arr[5]="item 6"
+``
 
-
-##For loop
+## For loop
 ```Bash
 for index in ${!arr[*]}
 do
