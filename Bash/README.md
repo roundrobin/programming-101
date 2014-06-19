@@ -28,8 +28,7 @@ mystring="${arg1}12${arg2}endoffile"
 
 otherString="$arg1"
 otherString+="12"
-otherString+="$arg2
-
+otherString+="$arg2"
 
 ```
 ## Arrays
@@ -50,4 +49,4 @@ do
     printf "%4d: %s %s\n" $index ${arr[$index]}
 
 done
-``
+```
