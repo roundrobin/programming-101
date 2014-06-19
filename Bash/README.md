@@ -6,6 +6,7 @@ In order to write a bash script, you have to create a file with the file extenti
 Bash scripts are called from the command line (CLI) just by referencing the filename and the directory it is in. Ex. ```$ ./loop.sh```
 
 ##Hello World
+The simplest script to start with
 ```Bash
 #!/bin/bash          
 echo Hello World    
@@ -15,7 +16,7 @@ echo Hello World
 
 
 ## Declaring Variable
-*Note:* To reference a declared variable add a ```$``` sign as a prefix of the variable
+*Note:* To access the value a declared variable, just add a ```$``` in front of the variable name.
 ```Bash
 var1 = "Hello World"
 echo $var
@@ -38,4 +39,4 @@ do
     printf "%4d: %s %s\n" $index ${arr[$index]}
 
 done
-``
+```
