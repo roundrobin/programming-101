@@ -1,9 +1,6 @@
 # Swift
 
-
-```@IBAction```
-
-##Basics
+## Basics
 
 ```Swift
   let interestingNumbers = [
