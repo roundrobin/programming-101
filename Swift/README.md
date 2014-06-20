@@ -21,6 +21,37 @@
       return -1
   }
 
+ //Range
+ var range1 = 1..4
+ var rainge2 = 1...5
+
+ //Loops
+ for(var i = 0;i < 5; ++i){
+      j*i
+ }
+
+
+ for i in 1...4 {
+   println(i)
+ }
+
+
+
+
+// Array
+var rapperList: String[] = ["Big L", "Method man", "Dr. Dre", "Guru"]
+rapperList[1...2] = []
+
+
+// Draw a triangle
+var path = UIBezierPath() //Create a bezier curve object
+
+path.moveToPoint(CGPoint(x: 100, y: 10))
+path.addLineToPoint(CGPoint(x: 20, y: 200))
+path.addLineToPoint(CGPoint(x: -100, y: 0))
+
+path.closePath()
+
 
 ```
 
@@ -35,11 +66,22 @@
 
 ## xCode
 
+## New Concepts
+  * The @ symbol in front of methods
+
+
+
+
+## Classes
+  * CGRectMake
+  * NSBundle
+  * UI
+
 
 ## Ideas to play with
 * Clock
-* Save record
-* Strut
+* Save record (CoreData)
+* Struts
 * Animation
 * Save a form
 * JSON handling
