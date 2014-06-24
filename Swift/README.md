@@ -2,6 +2,13 @@
 
 ## Basics
 
+
+Basic Types
+Collection Types
+Control Flow
+Loops
+
+
 ```Swift
 
   var author = "Andy Warhol"
@@ -20,22 +27,24 @@
   println(artists[0]) //=> "Picasso"
 
   
-  let interestingNumbers = [
-      "Prime": [2, 3, 5, 7, 11, 13],
-      "Fibonacci": [1, 1, 2, 3, 5, 8],
-      "Square": [1, 4, 9, 16, 25],
+  let winnerWorldCupPerYear = [
+      2006: ["Italy", "Protugal", "Germany"],
+      2010: ["Spain", "France", "Germany"],
+      2014: ["Germany", "Brazil", "Costa Rica"],
   ]
+
+  let keys = Array(winnerWorldCupPerYear.keys)
 
 //Basic branch
   
   let count = 0
 
   if count == 0 {
-      return 0
+      print("Case 1")
   } else if count < 0 {
-      return 1
+      print("Case 2")
   } else {
-      return -1
+      print("Case 3")
   }
 
  //Range
@@ -60,31 +69,42 @@ var rapperList: String[] = ["Big L", "Method man", "Dr. Dre", "Guru"]
 rapperList[1...2] = []
 
 
+// if-Statements are similar to JavaScript, but you dont need parenthesis
+func fooBar(){}                 // Function without arguments and return type
+func fooBar(arg : Int) {}       // Function with arguments, but without return type
+func fooBar(arg : Int) -> Int{  // Function with arguments and return type
+  return arg
+} 
+
+
+```
+
+
+## iOS specific
+```Swift
+ // Alert message
+ var alert = UIAlertController(title: "Title", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
+ alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+
 // Draw a triangle
 var path = UIBezierPath() //Create a bezier curve object
-
 path.moveToPoint(CGPoint(x: 100, y: 10))
 path.addLineToPoint(CGPoint(x: 20, y: 200))
 path.addLineToPoint(CGPoint(x: -100, y: 0))
-
 path.closePath()
 
 
 //Create an image
 var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
 
-```
-
-
-## Alerts
-```Swift
- var alert = UIAlertController(title: "Title", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
- alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
 
 
 ```
 
 ## xCode
+* Tip: There are two types of ios Playgrouds (iOS and Mac OSX)
+* 
+* If using playground, make sure to set the image path to relative
 
 ## New Concepts
   * The @ symbol in front of methods
@@ -101,6 +121,7 @@ var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
   * UI
 
 ## Ideas to play with
+* Sort array
 * Clock
 * Save record (CoreData)
 * Struts
@@ -115,4 +136,9 @@ var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
 * Stroke
 * Flip
 * Bounce back
+* RegExs
+* Subscript
+
+
+
 
