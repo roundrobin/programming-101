@@ -3,6 +3,23 @@
 ## Basics
 
 ```Swift
+
+  var author = "Andy Warhol"
+  var year = 1966
+  var testString = "In the future, everyone will be world-famous for 15 minutes. Author: \(author)"
+
+  testString += ", Year: \(year)"
+  //=> "In the future, everyone will be world-famous for 15 minutes. Author: Andy Warhol, Year: 1966"
+  
+
+  //The main method to print output to the console
+  println("I am console log message")
+
+  var artists = ["Picasso", "Hundertwasser", "Paul Klee", "Miro", "van Gogh"];
+
+  println(artists[0]) //=> "Picasso"
+
+  
   let interestingNumbers = [
       "Prime": [2, 3, 5, 7, 11, 13],
       "Fibonacci": [1, 1, 2, 3, 5, 8],
@@ -71,7 +88,10 @@ var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
 
 ## New Concepts
   * The @ symbol in front of methods
-
+  
+  * Workspace
+    * Project
+  * CocoaPods
 
 
 ## Classes
