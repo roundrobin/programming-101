@@ -53,6 +53,9 @@ path.addLineToPoint(CGPoint(x: -100, y: 0))
 path.closePath()
 
 
+//Create an image
+var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
+
 ```
 
 
@@ -71,12 +74,11 @@ path.closePath()
 
 
 
-
 ## Classes
-  * CGRectMake
+  * CGRectMake / CGPoint
+  * UIColor
   * NSBundle
   * UI
-
 
 ## Ideas to play with
 * Clock
@@ -85,6 +87,12 @@ path.closePath()
 * Animation
 * Save a form
 * JSON handling
-
-
+* Gesture Input (Pinch, Swipe)
+* Closures / Blocks
+* Blur
+* Opacity
+* Images
+* Stroke
+* Flip
+* Bounce back
 
