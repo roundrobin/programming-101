@@ -26,7 +26,7 @@ Loops
 ```
 
 
-### Topic
+### Collections (Arrays, Key-Value)
 ```swift
   var artists = ["Picasso", "Hundertwasser", "Paul Klee", "Miro", "van Gogh"];
 
@@ -43,7 +43,7 @@ Loops
 
 ```
 
-### Topic
+### Control flow
 ```Swift
 
 //Basic branch
@@ -61,7 +61,7 @@ Loops
 
 ```
 
-### Topic
+### Iteration
 ```Swift
 
  //A new type: Number Range
@@ -76,7 +76,7 @@ Loops
 
 ```
 
-### Topic
+### Functions
 ```Swift
 
 // if-Statements are similar to JavaScript, but you dont need parenthesis
