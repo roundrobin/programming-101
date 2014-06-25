@@ -8,12 +8,14 @@ Collection Types
 Control Flow
 Loops
 
-
+### Basics
 ```Swift
 
   var author = "Andy Warhol"
   var year = 1966
-  var testString = "In the future, everyone will be world-famous for 15 minutes. Author: \(author)"
+  var testString = "In the future, " +
+                   "everyone will be world-famous for 15 minutes. " +
+                   "Author: \(author)"
 
   testString += ", Year: \(year)"
   //=> "In the future, everyone will be world-famous for 15 minutes. Author: Andy Warhol, Year: 1966"
@@ -21,7 +23,11 @@ Loops
 
   //The main method to print output to the console
   println("I am console log message")
+```
 
+
+### Topic
+```swift
   var artists = ["Picasso", "Hundertwasser", "Paul Klee", "Miro", "van Gogh"];
 
   println(artists[0]) //=> "Picasso"
@@ -35,6 +41,11 @@ Loops
 
   let keys = Array(winnerWorldCupPerYear.keys)
 
+```
+
+### Topic
+```Swift
+
 //Basic branch
   
   let count = 0
@@ -47,32 +58,31 @@ Loops
       print("Case 3")
   }
 
- //Range
+
+```
+
+### Topic
+```Swift
+
+ //A new type: Number Range
  var range1 = 1..4
  var rainge2 = 1...5
 
- //Loops
+ //A normal for-loop
  for(var i = 0;i < 5; ++i){
       j*i
  }
 
 
- for i in 1...4 {
-   println(i)
- }
+```
 
-
-
-
-// Array
-var rapperList: String[] = ["Big L", "Method man", "Dr. Dre", "Guru"]
-rapperList[1...2] = []
-
+### Topic
+```Swift
 
 // if-Statements are similar to JavaScript, but you dont need parenthesis
-func fooBar(){}                 // Function without arguments and return type
-func fooBar(arg : Int) {}       // Function with arguments, but without return type
-func fooBar(arg : Int) -> Int{  // Function with arguments and return type
+func fooBar1(){}                 // Function without arguments and return type
+func fooBar2(arg : Int) {}       // Function with arguments, but without return type
+func fooBar3(arg : Int) -> Int{  // Function with arguments and return type
   return arg
 } 
 
@@ -82,7 +92,7 @@ func fooBar(arg : Int) -> Int{  // Function with arguments and return type
 
 ## iOS specific
 ```Swift
- // Alert message
+ // Show Alert message
  var alert = UIAlertController(title: "Title", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
  alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
 
@@ -102,9 +112,8 @@ var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
 ```
 
 ## xCode
-* Tip: There are two types of ios Playgrouds (iOS and Mac OSX)
-* 
-* If using playground, make sure to set the image path to relative
+* Tip: There are two types of iOS Playgrouds (iOS and Mac OSX)
+* If using playground, make sure to set the image path to relative in the settings
 
 ## New Concepts
   * The @ symbol in front of methods
@@ -112,6 +121,10 @@ var sampleImage = UIImage(named: "/PATH_TO_IMAGE/image.jpg")
   * Workspace
     * Project
   * CocoaPods
+
+## Terminology
+* Outlet
+* Segue
 
 
 ## Classes
