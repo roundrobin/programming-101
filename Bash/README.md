@@ -71,4 +71,30 @@ do
     printf "%4d: %s %s\n" $index ${arr[$index]}
 
 done
+
+for i in `seq 1 3`;
+  do
+    echo $i
+  done  
+  
+  # Prints
+  # 1
+  # 2
+  # 3  
+
 ```
+
+
+
+
+## Reading a file
+```Bash
+while read p; do
+  
+  lineClient=$p
+  echo $lineClient
+  
+done <./logs/client-profiling.log
+```
+
+  
