@@ -62,6 +62,9 @@ arr[5]="item 6"
 #Push a value to array
 arr+=('item 7')
 
+
+echo "${arr[0]}"
+
 ```
 
 ## For loop
@@ -76,6 +79,11 @@ for i in `seq 1 3`;
   do
     echo $i
   done  
+
+for i in {1..3}
+  do
+    echo "$i"
+  done   
   
   # Prints
   # 1
@@ -87,8 +95,16 @@ for i in `seq 1 3`;
 
 
 
-## Reading a file
+## Helpers
 ```Bash
+# Read command line arguments
+echo $1
+
+
+# Sleeps 5 seconds
+sleep 5;
+
+# Reading a file
 while read p; do
   
   lineClient=$p
