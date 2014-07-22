@@ -52,6 +52,16 @@ otherString+="$arg2"
 ## Arrays
 
 ```Bash
+
+names=(
+  "Aaron Maxwell"
+  "Wayne Gretzky"
+  "David Beckham"
+  "Anderson da Silva"
+)
+
+
+
 arr[0]="item 1"
 arr[1]="item 2"
 arr[2]="item 3"
@@ -112,5 +122,31 @@ while read p; do
   
 done <./logs/client-profiling.log
 ```
+
+Examples If-statements
+```bash
+  # Check if variable 'name' exists
+  if [[ -z "$name" ]]; then
+      echo "usage: $0 NAME"
+      exit 1
+  fi
+
+  #Check for a certain user
+  if [ `whoami` != 'root' ]; then
+    echo ""
+    
+  fi
+
+  if rm -f ${LOG_FILES} ; then
+    /bin/echo "done"
+  else
+    /bin/echo "Could not delete $LOG_FILES"
+  fi
+
+
+
+```
+
+
 
   
